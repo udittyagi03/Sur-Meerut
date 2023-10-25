@@ -1,0 +1,282 @@
+.body{
+margin: 0px;
+padding: 0px;
+}
+
+a[href^='mailto']::before {
+    content: '📧 ';
+}
+
+a[href^='tel']::before {
+    content: '📞 ';
+}
+
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+
+.icon-bar {
+    position: fixed;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+  }
+
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .call {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .mail {
+    background: #bb0000;
+    color: white;
+  }
+
+
+
+  /* Navbar  */
+  .nav-link{
+    border: 1px solid rgb(83, 29, 29);
+    margin-right: 1px;
+    width: 160px;
+    text-align: center;
+    background-color: rgb(83, 29, 29);
+    margin-top: 5px;
+  }
+
+
+  #textstyle{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  #textstyle:hover{
+    text-decoration: dashed;
+    color: rgb(94, 39, 39);
+  }
+ 
+  /* About  */
+  .about{
+    margin: 30px;
+    /* margin-left: 75px; */
+  }
+ 
+
+/* Awards */
+.awards-class{
+    margin: 30px;
+    /* margin-left: 75px; */
+  }
+
+.section{
+    margin: 30px;
+    /* margin-left: 75px; */
+  }
+
+.gallery{
+    margin: 30px;
+    /* margin-left: 75px; */
+  }
+
+
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px solid black ;/* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 8px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #ffbdbd; /* Add a dark-grey background on hover */
+  }
+
+  .gallery-button{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#gallery-button{
+    background-color: rgb(83, 29, 29);
+    border: 1px solid rgb(83, 29, 29);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+.founder-section {
+    background-color: #f5f5f5;
+    padding: 50px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .founder img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  .founder h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .founder p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+  }
+  @media (min-width: 768px) {
+    .founder {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .founder img {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  .gallery-section {
+    background-color: #f5f5f5;
+    padding: 50px;
+    text-align: center;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+  /* About Us file styling  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+  #about2{
+    background-color: rgb(255, 153, 0);
+    /* text-align: center; */
+    border: 1px solid black;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+
+ .about1{
+    border: 0.5px solid rgb(0, 0, 0) ;
+    display: grid;
+    /* padding-top: 5px; */
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding-left: 4px;
+    margin-left: -32px;
+ }
+
+ #about1{
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+ }
+
+
+ /* about4 */
+
+
+
+
+ /* Section Services */
+ .services {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    /* position: absolute; */
+    bottom: 5px;
+    left: 16px;
+  }
+
+/*  */
+/*  */
+/*  */
+ /*  */
+
+
+ 
+/* Events */
+
+.banner {
+    background: #a770ef;
+    background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  }
